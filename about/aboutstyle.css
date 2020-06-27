@@ -1,0 +1,68 @@
+body{
+display: grid;
+grid-template-areas:
+                        ". header ."
+                        ". h1 ."
+                        ". barberabout ."
+                        ". funstuff ."
+                        "footer footer footer";
+grid-template-columns:1fr 1fr 1fr;
+grid-template-rows:1fr;
+background-color: #FFFFFF;
+
+}
+
+.logo{
+align-content: center;
+display: block;
+padding: 4px;
+width: 200px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.nav > a{
+        grid-area: nav;
+        align-items: center;
+        color:black;
+        text-align: center;
+        padding-left: 30px;
+        text-decoration: none;
+        font-size: 30px;
+        align-content: center;
+        text-align: center;
+        justify-content: space-evenly;
+        font-family: 'Playfair Display', serif;
+}
+
+.header{
+    grid-area: header;
+    align-content: center;
+    text-align: center;
+}
+h1{
+    grid-area: h1;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+h2{
+    font-family: 'Playfair Display', serif;
+}
+.barberabout{
+    grid-area:barberabout;
+
+}
+
+.funstuff{
+    grid-area:funstuff;
+}
+
+footer{
+    grid-area:footer;
+    text-align: center;
+}
+
+p{
+    font-size: small;
+}

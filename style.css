@@ -1,21 +1,20 @@
-body {
+.grid-container {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    display: grid;
     grid-template-areas: 
     "header header header"
     "main-section main-section main-section"
     "main-section main-section main-section"
-    "main-section main-section main-section"
-    "section-two section-two section-two"
     "section-two section-two section-two"
     "footer footer footer";
-    background-color: #594B49;
 }
 
-header {
+.header {
     grid-area: header;
-    background-color: #594B49;
+    background-color: white;
+    text-align: center;
+    justify-content: space-evenly;
 }
 
 .main-section {
@@ -25,23 +24,56 @@ header {
 .logo {
     display: block;
     padding: 4px;
-    width: 100px;
+    width: 200px;
     margin-left: auto;
     margin-right: auto;
 }
 
-h1 {
+nav > a{
+    /* display: flex; */
+    align-items: center;
+    color:black;
     text-align: center;
+    padding-left: 30px;
+    text-decoration: none;
+    font-size: 30px;
+    align-content: center;
+    text-align: center;
+    justify-content: space-evenly;
+    font-family: 'Playfair Display', serif;
 }
 
-nav {
-    align-items: center;
+h3{
+    color: black;
+     align-items: center;
+    text-align: center;
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    align-content: center;
+    text-align: center;
+    justify-content: space-evenly;
+    font-family: 'Playfair Display', serif;
+}
 
+h2{
+    background-color: white;
+    color: black;
+    font-family: 'Playfair Display', serif;
+}
+
+li{
+    background-color: black;
+    font-family: 'Playfair Display', serif;
+}
+
+a{
+    border-radius: 10px;
 }
 
 .section-one {
     grid-area: section-one;
-    background-image: url("./images/barbershop.jpeg");
+    background-image: url("./images/backgroundchair.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -57,45 +89,47 @@ ul {
     text-align: center; 
     height: 100%;
     padding: 20px;
+    list-style-type: none;
 }
-
-.grid-container{
-    display: flex;
-    flex-wrap: wrap;
-    grid-row: 3fr;
-    grid-column: 1fr 1fr 1fr;
-}
-
 
 .brush{
     display: flex;
     flex-wrap: wrap;
-    height:30%;
-    width:30%;
-    grid-column: 3/4;
+    height:60%;
+    width:60%;
+    align-content: center;
 }
 
 .chair{
     display: flex;
     flex-wrap: wrap;
-    height:50%;
-    width:50%;
-    grid-column: 3/4;
+    height:60%;
+    width:60%;
+    align-content: center;
 }
 
 .sign{
     display: flex;
     flex-wrap: wrap;
-    height:30%;
-    width:30%;
-    grid-column: 3/4;
+    height:60%;
+    width:60%;
+    align-content: center;
 }
 
 .section-two{
     grid-area: section-two;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    align-content: space-between;
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 30px;
+   
 }
 
 footer{
     grid-area: footer;
-    background-color: black;
+    background-color: white;
+    text-align: center;
 }
