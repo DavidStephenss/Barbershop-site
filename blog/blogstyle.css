@@ -1,0 +1,75 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: " header header"
+                         "blog-1 blog-1"
+                         "blog-2 blog-2"
+                         "blog-3 blog-3"
+                         "footer footer";
+}
+
+.header{
+    grid-area: header;
+    align-content: center;
+    text-align: center;
+}
+
+.blog-1{
+    grid-area: blog-1;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    border-width: 10px;
+
+}
+
+.blog-2{
+    grid-area: blog-2;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    border-width: 10px;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.blog-3{
+    grid-area: blog-3;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    border-width: 10px;
+}
+
+footer{
+    grid-area: footer;
+    text-align: center;
+}
+
+.words{
+    border: 10px;
+}
+
+.logo{
+    align-content: center;
+    display: block;
+    padding: 4px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    .nav > a{
+            grid-area: nav;
+            align-items: center;
+            color:black;
+            text-align: center;
+            padding-left: 30px;
+            text-decoration: none;
+            font-size: 30px;
+            align-content: center;
+            text-align: center;
+            justify-content: space-evenly;
+            font-family: 'Playfair Display', serif;
+    }

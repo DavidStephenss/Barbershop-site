@@ -66,3 +66,29 @@ footer{
     padding: 10px;
     text-align: center;
 }
+
+@media (max-width: 900px){
+
+}
+
+@media (max-width: 600px) {
+   grid-container{ display:grid ;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr.5fr ;
+    grid-template-areas:
+                        " header"
+                        " containerone"
+                        " containerone"
+                        " containerone"
+                        "containertwo"
+                        "containertwo"
+                        "containertwo"
+                        " containerthree"
+                        " containerthree"
+                        " containerthree"
+                         "footer";
+                         margin: 5px;
+                         text-align: center;}
+                         
+
+}

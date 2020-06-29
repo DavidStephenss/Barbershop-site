@@ -30,7 +30,6 @@
 }
 
 nav > a{
-    /* display: flex; */
     align-items: center;
     color:black;
     text-align: center;
@@ -132,4 +131,13 @@ footer{
     grid-area: footer;
     background-color: white;
     text-align: center;
+}
+
+@media (max-width: 900px){
+
+}
+
+@media (max-width: 600px) {
+    
+
 }

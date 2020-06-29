@@ -1,0 +1,75 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr.5fr;
+    grid-template-areas: ". logo ."
+                        ". nav ."
+                        ". form ."
+                        ". form ."
+                        "footer footer footer";
+                        background-image: url(/images/photo-1524230616393-d6229fcd2eff.jpeg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+}
+
+header{
+    display:flex;
+    align-content: center;
+    text-align: center; 
+    align-items: center; 
+    background-color: black;
+
+}
+
+.logo{
+    align-content: center;
+    display: block;
+    padding: 4px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: logo;
+    }
+
+nav > a {
+    color:black;
+    text-align: center;
+    padding-left: 30px;
+    text-decoration: none;
+    font-size: 30px;
+    align-content: center;
+    text-align: center;
+    justify-content: space-evenly;
+    font-family: 'Playfair Display', serif;
+}
+
+.nav{
+    grid-area: nav;
+}
+
+h1{
+    text-align: center;
+}
+
+.buttons{
+    padding: 20px 10px;
+    margin: 0px 0px 37px;
+    grid-area: form;
+}
+
+
+footer{
+    grid-area: footer;
+    text-align: center;
+    background-color: black;
+    font-size: small;
+    color: white;
+}
+
+@media (max-width: 900px){
+
+}
+
+@media (max-width: 600px) {
+
+}
